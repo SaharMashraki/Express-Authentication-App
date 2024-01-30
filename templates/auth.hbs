@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Authentication</title>
+    <link rel="stylesheet" href="css/auth.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Authentication</h1>
+        <p>An authentication code has been sent to your email: {{ email }}</p>
+        <p>Please check your email and enter the code below to proceed:</p>
+        <form action="/login" method="post">
+            <input type="hidden" name="email" value="{{ email }}">
+            <input type="text" name="authCode" placeholder="Enter the authentication code" required>
+            <input type="submit" value="Verify">
+        </form>
+    </div>
+</body>
+</html>
