@@ -1,4 +1,4 @@
-# Express-Authentication-App
+
 # Express Authentication App
 
 This is a simple Express application for user authentication, using MongoDB for data storage and Nodemailer for sending authentication codes via email.
